@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/foodImageViewUser"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/food_picture"
+        android:paddingTop="20dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/fNameTextViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodImageViewUser"
+        android:layout_marginTop="20dp"
+        android:hint="@string/food_name"
+        android:maxLines="1"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/fPriceTextViewUser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodImageViewUser"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/food_price"
+        android:maxLines="1"
+        android:padding="1dp" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fNameTextViewUser"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add to cart" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/cartImageView"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/food_picture"
+        android:paddingTop="20dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/cartNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cartImageView"
+        android:hint="@string/food_name"
+        android:maxLines="1"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/cartDescriptionTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartNameTextView"
+        android:layout_toEndOf="@+id/cartImageView"
+        android:hint="@string/food_description"
+        android:maxLines="3"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/cartPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartDescriptionTextView"
+        android:layout_toEndOf="@+id/cartImageView"
+        android:hint="@string/food_price"
+        android:maxLines="1"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/cartQuantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartPriceTextView"
+        android:layout_toEndOf="@+id/cartImageView"
+        android:hint="Food quantity"
+        android:maxLines="1"
+        android:padding="1dp" />
+
+    <Button
+        android:id="@+id/decreaseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/cartImageView"
+        android:text="-"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/increaseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="50dp"
+        android:text="+"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/deleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="342dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:background="@color/white"/>
+</RelativeLayout>

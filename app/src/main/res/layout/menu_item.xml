@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:clickable="true"
+    android:focusable="true">
+
+        <ImageView
+            android:id="@+id/foodImageView"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/food_picture"
+            android:paddingTop="20dp"
+            android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/fNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/foodImageView"
+                android:hint="@string/food_name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/fDescriptionTextView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fNameTextView"
+                android:layout_toEndOf="@+id/foodImageView"
+                android:hint="@string/food_description"
+                android:maxLines="3"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/fPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fDescriptionTextView"
+                android:layout_toEndOf="@+id/foodImageView"
+                android:hint="@string/food_price"
+                android:maxLines="1"
+                android:padding="1dp" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/foodImageView"
+                android:text="@string/delete"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_below="@+id/foodImageView"
+
+                android:text="@string/update"
+                android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

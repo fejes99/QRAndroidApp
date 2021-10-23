@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QRMenuApp</string>
+    <string name="food_picture">Food picture</string>
+    <string name="food_name">Food name</string>
+    <string name="food_description">Food Description</string>
+    <string name="food_price">Food price</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="FAT_add_menu_item">Add product item</string>
+    <string name="logo">Logo</string>
+</resources>

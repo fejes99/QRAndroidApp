@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="food_picture">Food picture</string>
+    <string name="food_name">Food name</string>
+    <string name="food_description">Food Description</string>
+    <string name="food_price">Food price</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="FAT_add_menu_item">Add product item</string>
+</resources>
